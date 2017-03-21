@@ -5,7 +5,7 @@ defmodule ElmCompile.Mixfile do
     [app: :elm_compile,
      version: "0.1.0",
      compilers: Mix.compilers,
-     elixir: "~> 1.3",
+     elixir: "~> 1.4",
      description: description(),
      package: package(),
      deps: deps()
