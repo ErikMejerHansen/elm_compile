@@ -27,6 +27,7 @@ defmodule ElmCompile.Mixfile do
   defp package do
     [
       licenses: ["Apache 2.0"],
+      maintainers: ["Erik Mejer Hansen"],
       links: %{"GitHub" => "https://github.com/ErikMejerHansen/elm_compile"}
     ]
   end
