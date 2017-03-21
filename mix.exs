@@ -7,7 +7,8 @@ defmodule ElmCompile.Mixfile do
      compilers: Mix.compilers,
      elixir: "~> 1.3",
      description: description(),
-     package: package()
+     package: package(),
+     deps: deps()
     ]
   end
 
@@ -16,6 +17,10 @@ defmodule ElmCompile.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     [applications: []]
+  end
+
+  defp deps do
+    [ {:ex_doc, ">= 0.0.0", only: :dev} ]
   end
 
   defp description do
