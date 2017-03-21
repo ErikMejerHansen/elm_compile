@@ -74,7 +74,7 @@ defmodule Mix.Tasks.Compile.Elm do
 
 
 
-  def merge_config(config) do
+  defp merge_config(config) do
 
     Keyword.merge(config, @config_defaults, fn(_key, supplied_value, default_value) ->
       unless is_nil(supplied_value) do supplied_value else default_value end
