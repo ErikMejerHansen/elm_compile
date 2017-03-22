@@ -2,7 +2,7 @@ defmodule Mix.Tasks.Compile.Elm do
   use Mix.Task
 
   @config_defaults [
-    src_dir: "web/",
+    src_dir: "web",
     main_module: "Main.elm",
     compiler_arguments: ["--output", "main.js"],
     destination_dir: "priv/static",
