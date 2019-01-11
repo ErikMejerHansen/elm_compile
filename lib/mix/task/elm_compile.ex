@@ -24,7 +24,7 @@ defmodule Mix.Tasks.Compile.Elm do
 
   ## Example:
       def project do
-        [app: :elm_compile,
+        [app: :my_app,
          version: "1.0.0",
          elixir: "~> 1.7",
          elm: [

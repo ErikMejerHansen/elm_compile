@@ -18,7 +18,7 @@ Add `:elm` to your list of `compilers` in your project setup in `mix.exs`:
 
 ``` elixir
 def project do
-  [app: :your_app,
+  [app: :my_app,
    version: "1.0.0",
    elixir: "~> 1.7",
    compilers: Mix.compilers ++ [:elm]
