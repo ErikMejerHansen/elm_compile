@@ -1,26 +1,27 @@
 defmodule ElmCompile.Mixfile do
   use Mix.Project
 
+  @elixir_version "~> 1.7"
+  @version "0.2.0"
+
   def project do
-    [app: :elm_compile,
-     version: "0.1.0",
-     compilers: Mix.compilers,
-     elixir: "~> 1.4",
-     description: description(),
-     package: package(),
-     deps: deps()
+    [
+      app: :elm_compile,
+      version: @version,
+      elixir: @elixir_version,
+      compilers: Mix.compilers(),
+      description: description(),
+      package: package(),
+      deps: deps()
     ]
   end
 
-  # Configuration for the OTP application
-  #
-  # Type "mix help compile.app" for more information
   def application do
     [applications: []]
   end
 
   defp deps do
-    [ {:ex_doc, ">= 0.0.0", only: :dev} ]
+    [{:ex_doc, "~> 0.19", only: :dev, runtime: false}]
   end
 
   defp description do
