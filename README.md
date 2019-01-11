@@ -6,7 +6,7 @@ Simple elm compile hook-in for Mix projects.
 
 Add `elm_compile` to your list of dependencies in `mix.exs`:
 
-```elixir
+``` elixir
 def deps do
   [{:elm_compile, "~> 0.2.0", only: :dev}]
 end
@@ -16,7 +16,7 @@ end
 
 Add `:elm` to your list of `compilers` in your project setup in `mix.exs`:
 
-```elixir
+``` elixir
 def project do
   [app: :your_app,
    version: "1.0.0",
