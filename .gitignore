@@ -1,6 +1,11 @@
+# dot-gitignore
+
+# Elixir
 /_build
-/cover
 /deps
 erl_crash.dump
 *.ez
 *.beam
+
+# macOS
+.DS_Store
